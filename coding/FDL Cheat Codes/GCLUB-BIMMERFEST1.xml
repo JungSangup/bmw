@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FDL>
+	
+	<!--G-CLUB-->
+	<cafd id="00001B29" name="ACSM_5" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Seat belt Chime 3 times (5sec)								[G-CLUB]">
+			<group id="3001">
+				<function start="11" end="11" mask="11111111b" comment="GWF_SBR_WARNDAUER">05</function>
+			</group>
+		</code>
+		<code description="2. Seat belt Chime Delete - Driver's">
+			<group id="3001">
+				<function start="5" end="5" mask="00000001b" comment="Gurtzustandsanzeige_fahrer">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="3. Seat belt Chime Delete - Passenger's">
+			<group id="3001">
+				<function start="6" end="6" mask="00000001b" comment="Gurtzustandsanzeige_Beifahrer">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="4. Seat belt Chime Delete - Driver's">
+			<group id="3001">
+				<function start="1" end="1" mask="00000001b" comment="SeatBeltReminder_Fahrer">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="5. Seat belt Chime Delete - Passenger's">
+			<group id="3001">
+				<function start="2" end="2" mask="00000001b" comment="SeatBeltReminder_Fahrer">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="6. Seat belt Chime Delete - Driver's i-Step Recent">
+                        <group id="3001">
+                <function start="0" end="0" mask="11111111b" comment="Gurtwarnung_0_0_255">00</function>
+				<function start="1" end="1" mask="11111111b" comment="Gurtwarnung_1_1_255">00</function>
+                        </group>
+		</code>
+	</cafd>
+	<cafd id="00002660" name="DKOMBI2" author="G-CLUB" series="G012,G011,G030">
+		<code description="1. Reverse Chime	on						[G-CLUB]">
+			<group id="3000">
+				<function start="1" end="1" mask="00010000b" comment="R_GANG_AKUSTIK_ENABLE">aktiv</function>
+			</group>
+		</code>
+		<code description="2. Reverse Chime	off - Default">
+			<group id="3000">
+				<function start="1" end="1" mask="00010000b" comment="R_GANG_AKUSTIK_ENABLE">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="3-1. M550d logo">
+			<group id="3001">
+				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG ">04</function>
+			</group>
+		</code>
+		<code description="3-2. M550i logo">
+			<group id="3001">
+				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG ">03</function>
+			</group>
+		</code>
+		<code description="3-3. b5_biturbo logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">0C</function>
+   			</group>
+		</code>
+		<code description="3-4. d5_biturbo logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">0D</function>
+   			</group>
+		</code>
+		<code description="3-5. M760i logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">06</function>
+   			</group>
+		</code>
+		<code description="3-6. M760Li logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">07</function>
+   			</group>
+		</code>
+		<code description="3-7. M750Ld logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">0F</function>
+   			</group>
+		</code>
+		<code description="3-8. M750d logo"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">10</function>
+   			</group>
+		</code>
+		<code description="3-9. MSP-Default (순정로고)"> 
+   			<group id="3001">
+    				<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">02</function>
+   			</group>
+		</code>
+		<code description="5-1. - ALPINA CLUSTER"> 
+   			<group id="3000">
+    				<function start="43" end="43" mask="01000000b" comment="ALPINA_ENABLE">aktiv</function>
+   			</group>
+		</code>
+		<code description="5-2. - MSP CLUSTER "> 
+   			<group id="3000">
+    				<function start="43" end="43" mask="01000000b" comment="ALPINA_ENABLE">nicht_aktiv</function>
+   			</group>
+			<group id="3001">
+    		<function start="18" end="18" mask="11111111b" comment="LOGO_SCHRIFTZUG">02</function>
+   			</group>
+		</code>
+		        <code description="6. ANALOG CLOCK Activate"> 
+   			<group id="3000">
+    				<function start="36" end="36" mask="00000001b" comment="CB_ANALOGE_UHR">aktiv</function>
+   			</group>
+		</code>
+		<code description="7. Temper -3C Alarm off">
+		    <group id="3005">
+			        <function start="94" end="94" mask="00010000b" comment="TEMPERATURWARNUNG">01</function>
+		    </group>
+		</code>
+		<code description="8. Manual Mode Shift Timeing Indicator">
+		    <group id="3000">
+			        <function start="35" end="35" mask="00100000b" comment="CB_SPA">01</function>
+		    </group>
+		</code>
+		<code description="9. Digital Velocity ">
+		    <group id="3000">
+			        <function start="35" end="35" mask="10000000b" comment="CB_DIGITAL_GESCHWINDIGKEIT">01</function>
+					<function start="63" end="63" mask="00001111b" comment="DIGIT_GESCHW_ENABLE">07</function>
+		    </group>
+		</code>
+	</cafd>
+	<cafd id="000017BD" name="BDC_01" author="G-CLUB" series="G011,G012,G030">
+		<code description="Day Running Light 0-OFF at Night[GCLUB]">
+			<group id="3501">
+				<function start="1" end="1" mask="00110000b" comment="FLC_AKTIV">01</function>
+			</group>
+	</code>
+	</cafd>
+	<cafd id="000017BC" name="BDC_BODY" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Side Mirror Angle Reduce when Reverse	 	[G-CLUB]">
+			<group id="3110">
+				<function start="1" end="1" mask="11111111b" comment="ASP_BORDSTEINAUTOMAIK_DELTA">1E</function>
+			</group>
+		</code>
+		<code description="2. Lock Panic Off When Engine off">
+			<group id="3100">
+				<function start="0" end="0" mask="00000010b" comment="REMOTE_HORN">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="3. Lock Panic Off When Engine on">
+			<group id="3100">
+				<function start="0" end="0" mask="00000010b" comment="REMOTE_HORN">aktiv</function>
+			</group>
+		</code>
+		<code description="4. Auto Door Lock 30Km/h">
+			<group id="3040">
+				<function start="11" end="11" mask="11111111b" comment="VAM_SPEED_LIMIT_PIA_AUTO_LOCK">1E</function>
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> HotPink      	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">FF</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">14</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">93</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">FF</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">14</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">93</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">FF</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">14</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">93</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">FF</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">14</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">93</function>
+
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> AQUA-BLUE    	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">00</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">FF</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">FF</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">00</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">FF</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">FF</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">00</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">FF</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">FF</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">00</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">FF</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">FF</function>
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> RED     	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">FF</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">00</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">00</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">FF</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">00</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">00</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">FF</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">00</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">00</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">FF</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">00</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">00</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> HotPink [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">FF</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">14</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">93</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">FF</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">14</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">93</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">FF</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">14</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">93</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">FF</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">14</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">93</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> AQUA-BLUE [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">00</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">FF</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">FF</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">00</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">FF</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">FF</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">00</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">FF</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">FF</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">00</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">FF</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">FF</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> RED [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">FF</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">00</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">00</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">FF</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">00</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">00</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">FF</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">00</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">00</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">FF</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">00</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">00</function>
+			</group>
+		</code>
+		<code description="3-1. Ambient Color Change White -> YELLOW [G-CLUB]">
+			<group id="3074">
+				<function start="87" end="87" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_R">FF</function>
+				<function start="88" end="88" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_G">FF</function>
+				<function start="89" end="89" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_B">00</function>
+				<function start="90" end="90" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_R">FF</function>
+				<function start="91" end="91" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_G">FF</function>
+				<function start="92" end="92" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_B">00</function>
+				<function start="93" end="93" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_R">FF</function>
+				<function start="94" end="94" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_G">FF</function>
+				<function start="95" end="95" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_B">00</function>
+				<function start="84" end="84" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_R">FF</function>
+				<function start="85" end="85" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_G">FF</function>
+				<function start="86" end="86" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_B">00</function>
+			</group>
+		</code>
+				<code description="3-2.  Ambient Color Change White -> RED [G-CLUB]">
+			<group id="3074">
+				<function start="87" end="87" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_R">FF</function>
+				<function start="88" end="88" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_G">00</function>
+				<function start="89" end="89" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_B">00</function>
+				<function start="90" end="90" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_R">FF</function>
+				<function start="91" end="91" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_G">00</function>
+				<function start="92" end="92" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_B">00</function>
+				<function start="93" end="93" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_R">FF</function>
+				<function start="94" end="94" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_G">00</function>
+				<function start="95" end="95" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_B">00</function>
+				<function start="84" end="84" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_R">FF</function>
+				<function start="85" end="85" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_G">00</function>
+				<function start="86" end="86" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_B">00</function>
+			</group>
+		</code>
+ 	</cafd>
+	<cafd id="00001DF7" name="BDC_BODY" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Window Up When door opened	Front	[G-CLUB]">
+			<group id="3510">
+				<function start="0" end="0" mask="00000001b" comment="FH_TUERAUF_STOP_MAUT">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="2. Window Up When door opened	Rear	[G-CLUB]">
+			<group id="3511">
+				<function start="0" end="0" mask="00000001b" comment="FH_TUERAUF_STOP_MAUT_REAR">nicht_aktiv</function>
+			</group>
+		</code>
+			</cafd>
+	<cafd id="00005FA9" name="BDC_BODY" author="G-CLUB" series="G011,G012,G030">
+		<code description="1.Side Mirror Angle Reduce when Reverse	 	[G-CLUB]">
+			<group id="3110">
+				<function start="1" end="1" mask="11111111b" comment="ASP_BORDSTEINAUTOMAIK_DELTA">1E</function>
+			</group>
+		</code>
+		<code description="2. Lock Panic Off When Engine off">
+			<group id="3100">
+				<function start="0" end="0" mask="00000010b" comment="REMOTE_HORN">nicht_aktiv</function>
+			</group>
+		</code>
+		<code description="3. Lock Panic Off When Engine on">
+			<group id="3100">
+				<function start="0" end="0" mask="00000010b" comment="REMOTE_HORN">aktiv</function>
+			</group>
+		</code>
+		<code description="4. Auto Door Lock 30Km/h">
+			<group id="3040">
+				<function start="11" end="11" mask="11111111b" comment="VAM_SPEED_LIMIT_PIA_AUTO_LOCK">1E</function>
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> HotPink      	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">FF</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">14</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">93</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">FF</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">14</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">93</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">FF</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">14</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">93</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">FF</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">14</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">93</function>
+
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> AQUA-BLUE    	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">00</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">FF</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">FF</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">00</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">FF</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">FF</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">00</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">FF</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">FF</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">00</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">FF</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">FF</function>
+			</group>
+		</code>
+		<code description="1. Ambient Color Change Bronze -> RED     	[G-CLUB]">
+			<group id="3074">
+				<function start="3" end="3" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_R">FF</function>
+				<function start="4" end="4" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_G">00</function>
+				<function start="5" end="5" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_1_B">00</function>
+				<function start="6" end="6" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_R">FF</function>
+				<function start="7" end="7" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_G">00</function>
+				<function start="8" end="8" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_2_B">00</function>
+				<function start="9" end="9" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_R">FF</function>
+				<function start="10" end="10" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_G">00</function>
+				<function start="11" end="11" mask="11111111b" comment="Ambiente_Farbe_ensemble_1_layer_3_B">00</function>
+				<function start="0" end="0" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_R">FF</function>
+				<function start="1" end="1" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_G">00</function>
+				<function start="2" end="2" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_1_B">00</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> HotPink [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">FF</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">14</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">93</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">FF</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">14</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">93</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">FF</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">14</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">93</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">FF</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">14</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">93</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> AQUA-BLUE [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">00</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">FF</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">FF</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">00</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">FF</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">FF</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">00</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">FF</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">FF</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">00</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">FF</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">FF</function>
+			</group>
+		</code>
+		<code description="2. Ambient Color Change Bronze/White -> RED [G-CLUB]">
+			<group id="3074">
+				<function start="24" end="24" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_R">FF</function>
+				<function start="25" end="25" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_G">00</function>
+				<function start="26" end="26" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_1_B">00</function>
+				<function start="27" end="27" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_R">FF</function>
+				<function start="28" end="28" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_G">00</function>
+				<function start="29" end="29" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_2_B">00</function>
+				<function start="30" end="30" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_R">FF</function>
+				<function start="31" end="31" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_G">00</function>
+				<function start="32" end="32" mask="11111111b" comment="Ambiente_Farbe_ensemble_2_layer_3_B">00</function>
+				<function start="21" end="21" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_R">FF</function>
+				<function start="22" end="22" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_G">00</function>
+				<function start="23" end="23" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_2_B">00</function>
+			</group>
+		</code>
+		<code description="3-1. Ambient Color Change White -> YELLOW [G-CLUB]">
+			<group id="3074">
+				<function start="87" end="87" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_R">FF</function>
+				<function start="88" end="88" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_G">FF</function>
+				<function start="89" end="89" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_B">00</function>
+				<function start="90" end="90" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_R">FF</function>
+				<function start="91" end="91" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_G">FF</function>
+				<function start="92" end="92" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_B">00</function>
+				<function start="93" end="93" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_R">FF</function>
+				<function start="94" end="94" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_G">FF</function>
+				<function start="95" end="95" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_B">00</function>
+				<function start="84" end="84" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_R">FF</function>
+				<function start="85" end="85" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_G">FF</function>
+				<function start="86" end="86" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_B">00</function>
+			</group>
+		</code>
+		<code description="3-2.  Ambient Color Change White -> RED [G-CLUB]">
+			<group id="3074">
+				<function start="87" end="87" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_R">FF</function>
+				<function start="88" end="88" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_G">00</function>
+				<function start="89" end="89" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_1_B">00</function>
+				<function start="90" end="90" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_R">FF</function>
+				<function start="91" end="91" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_G">00</function>
+				<function start="92" end="92" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_2_B">00</function>
+				<function start="93" end="93" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_R">FF</function>
+				<function start="94" end="94" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_G">00</function>
+				<function start="95" end="95" mask="11111111b" comment="Ambiente_Farbe_ensemble_5_layer_3_B">00</function>
+				<function start="84" end="84" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_R">FF</function>
+				<function start="85" end="85" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_G">00</function>
+				<function start="86" end="86" mask="11111111b" comment="GROUP_0_FARBE_ENSEMBLE_5_B">00</function>
+			</group>
+		</code>
+ 	</cafd>
+	<cafd id="000029B7" name="DME_BAC2" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Stop and Go Last Memory [G-CLUB]">
+			<group id="3020">
+				<function start="39" end="39" mask="00000011b" comment="TCM_MSA_MEMORY">ON</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00002742" name="DME_BAC2" author="G-CLUB" series="G011,G012,G030">
+		<code description="2. Stop and Go Last Memory [G-CLUB]">
+			<group id="3020">
+				<function start="19" end="19" mask="00000010b" comment="TCM_MSA_MEMORY">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00002098" name="HKFM2" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Trunk Close one Click	[G-CLUB]">
+			<group id="3009">
+				<function start="0" end="0" mask="00001000b" comment="HKL_ROCKERSWITCHPOS2_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_ROCKERSWITCHPOS2_DELAY_CLOSE">00, 00</function>
+			</group>
+			<group id="300B">
+				<function start="0" end="0" mask="00001000b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_DELAY_CLOSE">01, F4</function>
+			</group>
+		</code>
+	</cafd>
+		<cafd id="0000570E" name="HKFM2" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Trunk Close one Click	[G-CLUB]">
+			<group id="3009">
+				<function start="0" end="0" mask="00001000b" comment="HKL_ROCKERSWITCHPOS2_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_ROCKERSWITCHPOS2_DELAY_CLOSE">00, 00</function>
+			</group>
+			<group id="300B">
+				<function start="0" end="0" mask="00001000b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_DELAY_CLOSE">01, F4</function>
+			</group>
+		</code>
+	</cafd>
+		<cafd id="0000570E" name="HKFM2" author="G-CLUB" series="G011,G012,G030">
+		<code description="1. Trunk Close one Click						[G-CLUB]">
+			<group id="3009">
+				<function start="0" end="0" mask="00001000b" comment="HKL_ROCKERSWITCHPOS2_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_ROCKERSWITCHPOS2_DELAY_CLOSE">00, 00</function>
+			</group>
+			<group id="300B">
+				<function start="0" end="0" mask="00001000b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_LONGPRESS_CLOSE">00</function>
+				<function start="2" end="3" mask="11111111b" comment="HKL_REMOTECONTROLLIFTGATEBUTTON_DELAY_CLOSE">01, F4</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00001EF6" name="HU_NBT2" author="G-CLUB" series="G011,G012,G030">
+		<code description="* VIM  - JOG UP   MEDIA - MENU -MEDIA ">
+			<group id="3000">
+				<function start="98" end="98" mask="01000000b" comment="SPEEDLOCK_FREISCHALTMENU (SPEEDLOCK FREE SWITCHING MENU)">01</function>
+			</group>
+		</code>
+		<code description="1.VIM  63km/h						[G-CLUB]">
+			<group id="3000">
+				<function start="146" end="146" mask="00011111b" comment="SPEEDLOCK_SPEEDVALUE_MIN">1F</function>
+				<function start="147" end="147" mask="00111111b" comment="SPEEDLOCK_SPEEDVALUE_MAX">3F</function>
+			</group>
+			<group id="3006">
+				<function start="25" end="25" mask="11111111b" comment="SPEEDLOCK_X_KMH_MIN">FF</function>
+				<function start="26" end="26" mask="11111111b" comment="SPEEDLOCK_X_KMH_MAX">FF</function>
+			</group>
+			<group id="3000">
+				<function start="5" end="5" mask="00010000b" comment="VIDEO_FRONT_LOCKED">nicht_aktiv</function>
+				<function start="5" end="5" mask="00000100b" comment="VIDEO_HANDBRAKE">nicht_aktiv</function>
+				<function start="2" end="2" mask="00000111b" comment="VIDEO_SPEEDLOCK_CONDITION">None</function>
+			</group>
+		</code>
+		<code description="2.M performance iDrive Logo">
+			<group id="3001">
+				<function start="62" end="62" mask="00000110b" comment="STARTUP_TYPE">animation</function>
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">01</function>
+			</group>
+		</code>
+		<code description="2-2. ALPINA Logo">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">02</function>
+			</group>
+		</code>
+		<code description="2-3. BMW-I Logo">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">03</function>
+			</group>
+		</code>
+		<code description="2-4. BMW Connected Drive Logo">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">04</function>
+			</group>
+		</code>	
+		<code description="3. X - Drive MENU">
+			<group id="3000">
+				<function start="5" end="5" mask="00000001b" comment="COMPASS">aktiv</function>
+				<function start="15" end="15" mask="00000001b" comment="X_VIEW">aktiv</function>
+				<function start="26" end="26" mask="00110000b" comment="X_VIEW_GRAPHIC_SLOP">trajectory1</function>
+				<function start="26" end="26" mask="11000000b" comment="X_VIEW_GRAPHIC_ROLL">trajectory1</function>
+				<function start="110" end="110" mask="00000010b" comment="MOMENTDISTRIBUTION_MENU">aktiv</function>
+			</group>
+		</code>
+		<code description="4. Rolls Royce Sound Signal">
+			<group id="3002">
+				<function start="26" end="26" mask="00111000b" comment="SOUND_SIGNAL_SET">rolls_royce</function>
+			</group>
+		</code>
+		<code description="5. Video USB Codec ">
+			<group id="3000">
+				<function start="15" end="15" mask="00010000b" comment="ENT_CODEC_OGG">aktiv</function>
+				<function start="15" end="15" mask="00100000b" comment="ENT_CODEC_XVID">aktiv</function>
+				<function start="15" end="15" mask="01000000b" comment="ENT_CODEC_VCD">aktiv</function>
+				<function start="13" end="13" mask="00000100b" comment="ENT_MC_VIDEO_SUPPORT">aktiv</function>
+			</group>
+			<group id="3003">
+				<function start="32" end="32" mask="00000110b" comment="API_USB_VIDEO">both</function>
+				<function start="32" end="32" mask="00011000b" comment="API_IPOD_VIEDO">both</function>
+			</group>
+		</code>
+		<code description="6. NBT Legal Disclaimer Delete">
+			<group id="3001">
+				<function start="52" end="52" mask="11111111b" comment="MACRO_CAM_LEGALDISCLAIMER">00</function>
+				<function start="58" end="58" mask="11111111b" comment="LEGAL_DISCLAIMER_TIME">00</function>
+			</group>
+		</code>
+		<code description="7. Auto Time Adjust (ONLINE)">
+			<group id="3000">
+				<function start="19" end="19" mask="00000110b" comment="SETTINGS_TIME_AUTOMATIC">online</function>
+				<function start="105" end="105" mask="00100000b" comment="CLOCK_CHANGE_AUTOMATIC">aktiv</function>
+			</group>
+		</code>
+		<code description="8. Rear Cam Macro Trailer ">
+			<group id="3001">
+				<function start="54" end="54" mask="00000001b" comment="MACRO_TRAILER_COUPLING">aktiv</function>
+			</group>
+		</code>
+		<code description="9. Day Light MENU">
+			<group id="3000">
+				<function start="92" end="92" mask="00011000b" comment="DAYDRIVING_LIGHT">02</function>
+			</group>
+		</code>
+		<code description="10. Door Handle Light MENU">
+			<group id="3000">
+				<function start="17" end="17" mask="10000000b" comment="DOOR_HANDLE_LIGHTS">aktiv</function>
+			</group>
+		</code>
+		<code description="11. Ringtone (iOS only)">
+			<group id="3003">
+				<function start="6" end="6" mask="10000000b" comment="INBAND_RINGING">aktiv</function>
+			</group>
+		</code>
+		<code description="12. TPMC Temperature Active ">
+			<group id="3001">
+				<function start="1" end="1" mask="00100000b" comment="RDC_SAFETY">aktiv</function>
+				<function start="66" end="66" mask="00001100b" comment="RDC_DRUCK_TEMP">druck_und_temperatur</function>
+			</group>
+		</code>
+		<code description="13. Mirroring ">
+			<group id="3000">
+				<function start="6" end="6" mask="10000000b" comment="ENT_MIRACAST">aktiv</function>
+				<function start="30" end="30" mask="00001000b" comment="ENT_MIRACAST_DISPLAY_SETTINGS">aktiv</function>
+				<function start="13" end="13" mask="10000000b" comment="ENT_MC_WLAN_STREAM_DMP">aktiv</function>
+				<function start="9" end="9" mask="00000001b" comment="ENT_MC_WLAN_STREAM_DMP_COVERART">aktiv</function>
+				<function start="9" end="9" mask="00000010b" comment="ENT_MC_WLAN_STREAM_DMP_VIDEO">aktiv</function>
+			</group>
+			<group id="3003">
+				<function start="21" end="21" mask="00000010b" comment="WLAN_WIFI_DIRECT">aktiv</function>
+				<function start="20" end="20" mask="10000000b" comment="WLAN_STATUS">aktiv</function>
+			</group>
+		</code>
+		<code description="14. iDrive ID5 -> ID6 ">
+			<group id="3000">
+				<function start="29" end="29" mask="00011100b" comment="HMI_ID_VERSION">id6_light</function>
+			</group>
+		</code>
+		<code description="15-1. BOWERS AND WILKINS">
+			<group id="3000">
+				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">01</function>
+				<function start="57" end="57" mask="00110000b" comment="HIGH_END_AUDIO_MENUE (HIGH END AUDIO MENU)">00</function>
+			</group>
+		</code>
+		<code description="15-2. Bang Olufsen">
+			<group id="3000">
+				<function start="57" end="57" mask="00110000b" comment="HIGH_END_AUDIO_MENUE (HIGH END AUDIO MENU)">01</function>
+				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">00</function>
+			</group>
+		</code>
+		<code description="16. Navi Auto Zoom">
+		    <group id="3006">
+			    <function start="6" end="6" mask="00000010b" comment="NAVI_AUTOZOOM">01</function>
+			</group>
+		</code>
+	</cafd>
+		<cafd id="000017BC" name="BDC_01" author="G-CLUB" series="G011,G012,G030">
+		<code description="* Sport+/Comfort+/Eco+ Activate-	1/2   HU_NBT_EVO  [GCLUB]">
+			<group id="3221">
+				<function start="18" end="18" mask="11111111b" comment="FesPiaDefaultSportWorldMode">02</function>
+				<function start="19" end="19" mask="11111111b" comment="FesPiaDefaultComfortWorldMode">05</function>
+				<function start="20" end="20" mask="11111111b" comment="FesPiaDefaultEcoWorldMode">08</function>
+				<function start="9" end="9" mask="11111111b" comment="PfFesMaster_9_9_255">02</function>
+				<function start="12" end="12" mask="11111111b" comment="PfFesMaster_12_12_255">05</function>
+				<function start="15" end="15" mask="11111111b" comment="PfFesMaster_15_15_255">08</function>
+			</group>
+	</code>
+		<code description="1-1.Default Comfort Plus 	(1~6 Choose one)  [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">05</function>
+			</group>
+		</code>
+		<code description="1-2. Default Eco Plus				    [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">08</function>
+			</group>
+		</code>
+		<code description="1-3. Default Sport Plus				    [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">02</function>
+			</group>
+		</code>
+		<code description="1-4. Default Comfort			        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">04</function>
+			</group>
+		</code>
+		<code description="1-5.Default Eco PRO     		        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">07</function>
+			</group>
+		</code>
+		<code description="1-6.Default Sport   			        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">01</function>
+			</group>
+		</code>
+</cafd>
+	<cafd id="00005FA9" name="BDC_01" author="G-CLUB" series="G011,G012,G030">
+		<code description="* Sport+/Comfort+/Eco+Mode Activate-	1/2   HU_NBT_EVO  [GCLUB]">
+			<group id="3221">
+				<function start="18" end="18" mask="11111111b" comment="FesPiaDefaultSportWorldMode">02</function>
+				<function start="19" end="19" mask="11111111b" comment="FesPiaDefaultComfortWorldMode">05</function>
+				<function start="20" end="20" mask="11111111b" comment="FesPiaDefaultEcoWorldMode">08</function>
+				<function start="9" end="9" mask="11111111b" comment="PfFesMaster_9_9_255">02</function>
+				<function start="12" end="12" mask="11111111b" comment="PfFesMaster_12_12_255">05</function>
+				<function start="15" end="15" mask="11111111b" comment="PfFesMaster_15_15_255">08</function>
+			</group>
+	</code>
+		<code description="1-1.Default Comfort Plus 	(1~6 Choose one)  [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">05</function>
+			</group>
+		</code>
+		<code description="1-2.Default Eco Plus 				    [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">08</function>
+			</group>
+		</code>
+		<code description="1-3.Default Sport Plus 				    [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">02</function>
+			</group>
+		</code>
+		<code description="1-4.Default Comfort			        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">04</function>
+			</group>
+		</code>
+		<code description="1-5.Default EcoPRO 			        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">07</function>
+			</group>
+		</code>
+		<code description="1-6.Default Sport    			        [GCLUB]">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">01</function>
+			</group>
+		</code>
+    </cafd>
+	<cafd id="00001EF6" name="HU_NBT_EVO" author="G-CLUB" series="G011,G012,G030">
+		<code description="* Sport+/Comfort+/Eco+Mode Activate-	2/2	  BDC_BODY  [GCLUB]">
+			<group id="3008">
+				<function start="0" end="0" mask="00000100b" comment="FES_SPORT_EXPERT">01</function>
+				<function start="1" end="1" mask="00001000b" comment="SPORT_CONF_STEERING">01</function>
+				<function start="0" end="0" mask="00100000b" comment="FES_COMFORT_PLUS">01</function>
+				<function start="3" end="3" mask="00100000b" comment="ECO_CONF_ATTENUATION_COMFPLUS">01</function>
+				<function start="3" end="3" mask="01000000b" comment="ECO_CONF_STEERING_COMFPLUS">01</function>
+				<function start="0" end="0" mask="10000000b" comment="FES_ECO_PLUS">01</function>
+			</group>
+	</code>
+	<code description="* Sport Plus + EDC            [GCLUB]">
+			<group id="3008">
+				<function start="1" end="1" mask="00000100b" comment="SPORT_CONF_ATTENUATION">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00002660" name="DKOMBI2" author="G-CLUB" series="G011,G012,G030">
+	<code description="* Sport Mode Grey Cluster + 330Km        [GCLUB]">
+		    <group id="3000">
+			        <function start="22" end="22" mask="00100000b" comment="M_VARIANTE">01</function>
+		   	        <function start="59" end="59" mask="00100000b" comment="MPA_ENABLE">01</function>
+		   	        <function start="61" end="61" mask="10000000b" comment="MPA_MSP_VIEW_ENABLE">01</function>
+		    </group>
+		</code>
+		<code description="* Normal Cluster                  [GCLUB]">
+		    <group id="3000">
+			        <function start="22" end="22" mask="00100000b" comment="M_VARIANTE">00</function>
+		   	        <function start="59" end="59" mask="00100000b" comment="MPA_ENABLE">00</function>
+		   	        <function start="61" end="61" mask="10000000b" comment="MPA_MSP_VIEW_ENABLE">00</function>
+		    </group>
+		</code>
+	</cafd>
+
+
+	<!-- End G-CLUB-->
+</FDL>
