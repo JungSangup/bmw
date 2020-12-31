@@ -6,9 +6,9 @@
 
 - E-Sys Launcher PRO V2.8.1.155 ( /w TokenBuster)
 - E-Sys 3.28.1
-- PSDZ Data Lite V4.22.41
+- PSDZ Data Lite V4.22.41 , PSDZ Data Lite V4.27.20
 - 접속코드 : S15A
-- Firmware version : S15A-18-07-521
+- Firmware version : S15A-18-07-521 , 
 
 
 
