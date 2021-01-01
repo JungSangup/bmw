@@ -26,7 +26,7 @@
 - FDL Cheat Codes : 사용할 Cheat code를 선택 ( 경로는 {E-Sys Launcher PRO 설치 디렉토리}/FDLCodes )
 - High Resolution Fix : 고해상도 디스플레이에서 글자가 겹쳐지는 현상 방지
 
-![image-20210101151251269](./img/E-Sys Launcher.PNG)
+![image-20210101151251269](./img/E-Sys_Launcher.PNG)
 
 
 
