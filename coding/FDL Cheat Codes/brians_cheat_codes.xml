@@ -2,7 +2,7 @@
 <FDL>
 
 
-	<cafd id="00005FA9" name="BDC_BODY2" author="brian" series="G011,G012,G030">
+	<cafd id="00005FA9" name="BDC_BODY2" series="G011,G012,G030">
 		
 		<!-- 사이드미러 각도조절 -->
 		<code description="조수석 사이드미러 각도 조절 (23 : 35도)">
@@ -66,7 +66,7 @@
 		</code>		
 	</cafd>
 
-	<cafd id="000029B7" name="DME_DDE8xx" author="brian" series="G011,G012,G030">
+	<cafd id="000029B7" name="DME_DDE8xx" series="G011,G012,G030">
 		<!-- Stop & Go 마지막 설정 저장 -->
 		<code description="스탑앤고 마지막 상태 기억	-- 시동끄고 ACC ON상태에서 Code FDL">
 			<group id="3020">
@@ -76,7 +76,7 @@
  	</cafd>
 
 	
-	<cafd id="00001EF6" name="HU_NBT2" author="ekfxisidG030" series="G011,G012,G030">
+	<cafd id="00001EF6" name="HU_NBT2" series="G011,G012,G030">
 		<!-- 주행 락 해제 (설정 방법은 iDrive Media > Menu > Media 차례로 선택하여 히든메뉴에서 설정) -->
 		<code description="주행락 완전 해제">
 			<group id="3000">
