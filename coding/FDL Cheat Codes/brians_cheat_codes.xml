@@ -1,14 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FDL>
-	
+
 
 	<cafd id="00005FA9" name="BDC_BODY2" author="brian" series="G011,G012,G030">
-		<code description="1.사이드미러 각도 조절(조수석)">
+		
+		<!-- 사이드미러 각도조절 -->
+		<code description="조수석 사이드미러 각도 조절 (23 : 35도)">
 			<group id="3110">
 				<function start="1" end="1" mask="11111111b" comment="3110_1_1_255">23</function>
 			</group>
 		</code>
-		<code description="6 스포츠+/컴포트+/에코+모드 활성화-	1/2   HU_NBT_EVO 모듈도 코딩할것                             [서울ll마리화나  용인흥덕ll영웅별곡]">
+		
+		<!-- +모드 추가 설정 (HU_NBT_EVO 모듈도 코딩 필요함) -->
+		<code description="스포츠+/컴포트+/에코+모드 활성화">
 			<group id="3221">
 				<function start="18" end="18" mask="11111111b" comment="FesPiaDefaultSportWorldMode">02</function>
 				<function start="19" end="19" mask="11111111b" comment="FesPiaDefaultComfortWorldMode">05</function>
@@ -18,77 +22,121 @@
 				<function start="15" end="15" mask="11111111b" comment="PfFesMaster_15_15_255">08</function>
 			</group>
 		</code>
-		<code description="7-1.시동시 Default 컴포트플러스모드 	(1~6중 하나만 선택)                                           [서울ll마리화나  용인흥덕ll영웅별곡]">
-			<group id="3221">
-				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">05</function>
-			</group>
-		</code>
-		<code description="7-2.시동시 Default 에코플러스모드">
-			<group id="3221">
-				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">08</function>
-			</group>
-		</code>
-		<code description="7-3.시동시 Default 스포츠플러스모드">
-			<group id="3221">
-				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">02</function>
-			</group>
-		</code>
-		<code description="7-4.시동시 Default 컴포트모드(순정상태)">
-			<group id="3221">
-				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">04</function>
-			</group>
-		</code>
-		<code description="7-5.시동시 Default 에코PRO모드">
-			<group id="3221">
-				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">07</function>
-			</group>
-		</code>
-		<code description="7-6.시동시 Default 스포츠모드">
+		
+		<!-- 차량 시동 후 초기모드 선택 (아래 01 ~ 09 중 하나 택일)-->
+		<code description="Default Mode : Sport">
 			<group id="3221">
 				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">01</function>
 			</group>
 		</code>
+		<code description="Default Mode : Sport Plus">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">02</function>
+			</group>
+		</code>
+		<code description="Default Mode : Sport Individual">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">03</function>
+			</group>
+		</code>		
+		<code description="Default Mode : Comfort">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">04</function>
+			</group>
+		</code>
+		<code description="Default Mode : Comfort Plus">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">05</function>
+			</group>
+		</code>		
+		<code description="Default Mode : Eco PRO">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">07</function>
+			</group>
+		</code>
+		<code description="Default Mode : Eco PRO Plus">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">08</function>
+			</group>
+		</code>
+		<code description="Default Mode : Eco PRO Individual">
+			<group id="3221">
+				<function start="7" end="7" mask="11111111b" comment="PfFesMaster_7_7_255">09</function>
+			</group>
+		</code>		
 	</cafd>
 
-
 	<cafd id="000029B7" name="DME_DDE8xx" author="brian" series="G011,G012,G030">
-		<code description="1. 스탑앤고 마지막 상태 기억	-- 시동끄고 ACC ON상태에서 Code FDL">
+		<!-- Stop & Go 마지막 설정 저장 -->
+		<code description="스탑앤고 마지막 상태 기억	-- 시동끄고 ACC ON상태에서 Code FDL">
 			<group id="3020">
 				<function start="39" end="39" mask="00000011b" comment="TCM_MSA_MEMORY">ON</function>
 			</group>
 		</code>
  	</cafd>
 
-
+	
 	<cafd id="00001EF6" name="HU_NBT2" author="ekfxisidG030" series="G011,G012,G030">
-		<code description="1.주행락 완전 해제 / 부팅 끝난후 조그를 위로 한 상태에서 MEDIA - MENU -MEDIA             [으쓱으쓱]">
+		<!-- 주행 락 해제 (설정 방법은 iDrive Media > Menu > Media 차례로 선택하여 히든메뉴에서 설정) -->
+		<code description="주행락 완전 해제">
 			<group id="3000">
 				<function start="98" end="98" mask="01000000b" comment="SPEEDLOCK_FREISCHALTMENU (SPEEDLOCK FREE SWITCHING MENU)">01</function>
 			</group>
 		</code>
+		
+		<!-- Logo -->
+		<code description="M performance">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">01</function>
+			</group>
+		</code>
+		<code description="ALPINA">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">02</function>
+			</group>
+		</code>
+		<code description="BMW-i">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">03</function>
+			</group>
+		</code>
+		<code description="BMW Connected Drive">
+			<group id="3001">
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">04</function>
+			</group>
+		</code>
 
-		<code description="5. USB 동영상 활성화">
+		<!-- USB 동영상 재생기능 활성화 -->
+		<code description="USB 동영상 활성화">
 			<group id="3000">
 				<function start="15" end="15" mask="00010000b" comment="ENT_CODEC_OGG">aktiv</function>
 				<function start="15" end="15" mask="00100000b" comment="ENT_CODEC_XVID">aktiv</function>
 				<function start="15" end="15" mask="01000000b" comment="ENT_CODEC_VCD">aktiv</function>
 				<function start="13" end="13" mask="00000100b" comment="ENT_MC_VIDEO_SUPPORT">aktiv</function>
 			</group>
+			<group id="3003">
+				<function start="32" end="32" mask="00000110b" comment="API_USB_VIDEO">both</function>
+				<function start="32" end="32" mask="00011000b" comment="API_IPOD_VIEDO">both</function>
+			</group>
+		</code>			
 
-		<code description="9. Day Light 메뉴활성화">
+		<!-- DRL On/Off 메뉴 활성화 -->
+		<code description="DRL 메뉴활성화">
 			<group id="3000">
 				<function start="92" end="92" mask="00011000b" comment="DAYDRIVING_LIGHT">02</function>
 			</group>
 		</code>
 
-		<code description="11. TPMC 타이어 압력온도 활성화">
+		<!-- TPMC - 타이어 온도 표시 활성화-->
+		<code description="TPMC - 타이어 온도 표시 활성화">
 			<group id="3001">
 				<function start="1" end="1" mask="00100000b" comment="RDC_SAFETY">aktiv</function>
 				<function start="66" end="66" mask="00001100b" comment="RDC_DRUCK_TEMP">druck_und_temperatur</function>
 			</group>
 		</code>
 
-		<code description="19. 스포츠+/컴포트+/에코+모드 활성화-	2/2	  BDC_BODY 모듈도 코딩할것               [서울ll마리화나  용인흥덕ll영웅별곡]">
+		<!-- +모드 추가 설정 (BDC_BODY2 모듈도 코딩 필요함) -->
+		<code description="스포츠+/컴포트+/에코+모드 활성화">
 			<group id="3008">
 				<function start="0" end="0" mask="00000100b" comment="FES_SPORT_EXPERT">01</function>
 				<function start="1" end="1" mask="00001000b" comment="SPORT_CONF_STEERING">01</function>
@@ -98,38 +146,7 @@
 				<function start="0" end="0" mask="10000000b" comment="FES_ECO_PLUS">01</function>
 			</group>
 		</code>
-		<code description="20. 스포츠플러스모드  전자식뎀퍼적용차량만 (530d이상)                                     [서울ll마리화나]">
-			<group id="3008">
-				<function start="1" end="1" mask="00000100b" comment="SPORT_CONF_ATTENUATION">01</function>
-			</group>
-		</code>
-		<code description="21. 내비오토줌 활성화 (목적지선택후 활성화)                                               [서울ll라퓨타]">
-		    <group id="3006">
-			    <function start="6" end="6" mask="00000010b" comment="NAVI_AUTOZOOM">01</function>
-			</group>
-		</code>
-		<code description="22. 디스플레이 손가락 인식 (펌업후 작동되지 않는 차량)                                     [조델타]">
-		    <group id="3005">
-			    <function start="67" end="67" mask="00000010b" comment="CID_TOUCH_PROXIMITY">01</function>
-			</group>
-		</code>
 	</cafd>
-	<cafd id="00002259" name="SM2" author="ekfxisidG030" series="G011,G012,G030">
-		<code description="1-1. 시트 Heating/Cooling/안마기능 메모리(15분)-순정					      [서울ll라퓨타]">
-			<group id="3000">
-				<function start="5" end="5" mask="00000011b" comment="SA_MEMORY_ZEIT">01</function>
-			</group>
-		</code>
-		<code description="1-2. 시트 Heating/Cooling/안마기능 메모리(24시간)">
-			<group id="3000">
-				<function start="5" end="5" mask="00000011b" comment="SA_MEMORY_ZEIT">02</function>
-			</group>
-		</code>
-		<code description="1-3. 시트 Heating/Cooling/안마기능 메모리(항상)">
-			<group id="3000">
-				<function start="5" end="5" mask="00000011b" comment="SA_MEMORY_ZEIT">03</function>
-			</group>
-		</code>		
-	</cafd>
-	<!-- End ekfxisidG030-->
+	
+
 </FDL>
